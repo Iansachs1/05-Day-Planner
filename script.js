@@ -180,7 +180,6 @@ function RenderInputValues () {
 }
 
 
-
 // when you click on any button with the class saveBtn
 $(".saveBtn").on("click", function(event) {
     // find the clicked button and get its id, then remove everything but the number
