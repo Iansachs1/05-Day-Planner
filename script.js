@@ -161,7 +161,12 @@ function ClearLocalStorage() {
 function RenderInputValues () {
     inputValues = JSON.parse(localStorage.getItem("InputValues"));
     if (inputValues === null) {
-        return;
+        inputValues = [
+            "", "", "", "", "", "",
+            "", "", "", "", "", "",
+            "", "", "", "", "", "",
+            "", "", "", "", "", "",
+        ];
     } else {
         
         for (let i = 0; i < inputValues.length; i++) {
