@@ -183,7 +183,7 @@ $(".saveBtn").on("click", function(event) {
     btnIndex = parseInt(btnIndex.replace(/\D/g, ""));
     
     // get the input element with the id that matches the button's index
-    var matchingInputElement = $("#" + btnIndex)[0];
+    var matchingInputElement = event.target.previousSibling;
     
     // save the value of the selected input field to the array inpiut values
     inputValues[btnIndex - 1] = matchingInputElement.value;
