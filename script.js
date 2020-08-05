@@ -11,7 +11,6 @@ var inputValues = [
 ];
 
 
-
 // create a formatted date and time and append it to the empty div designated to display time
 function DisplayDateaAndTime() {
     var momentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
@@ -66,6 +65,7 @@ function DisplayTimeBlocks() {
 }
 
 DisplayTimeBlocks();
+
 
 // function to format 24 hour clock to display in 00:00 
 function Format24HourTime() {
@@ -155,7 +155,6 @@ function SaveInputValue() {
 function ClearLocalStorage() {
     localStorage.clear();
 }
-
 
 // get array from local storage and pass back into inpuValues array
 function RenderInputValues () {
